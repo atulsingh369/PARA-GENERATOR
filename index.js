@@ -40,8 +40,6 @@ const paras = (n) => {
 const getWords = () => {
 	noOfWords = Number(words.value);
 	words.value = "";
-	if (multipl.childNodes.length >= 5 || (noOfWords > 50 && multipl.childNodes.length >= 2))
-		multipl.removeChild(multipl.firstElementChild);
 	paras(noOfWords);
 }
 
